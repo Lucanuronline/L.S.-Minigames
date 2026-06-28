@@ -8,32 +8,8 @@ let clickSound = new Audio('sounds/click.mp3');
 let soundAn = true;
 let musikAn = true;
 
-document.getElementById('bgMusic').volume = 0.5;
+document.getElementById('bgMusic').volume = 0.2;
 
-const music = document.getElementById('bgMusic');
-const slider = document.getElementById('volume');
-
-// Unlock Audio einmal bei erster Interaktion
-function unlockAudio() {
-    if (music) {
-        music.play().then(() => {
-            music.pause();
-            music.currentTime = 0;
-        }).catch(() => {});
-    }
-    document.removeEventListener('click', unlockAudio);
-    document.removeEventListener('touchstart', unlockAudio);
-}
-
-document.addEventListener('click', unlockAudio);
-document.addEventListener('touchstart', unlockAudio);
-
-// Slider
-if (slider && music) {
-    slider.addEventListener('input', () => {
-        music.volume = slider.value;
-    });
-}
 
 if (highscore === null) {
     highscore = Infinity;
