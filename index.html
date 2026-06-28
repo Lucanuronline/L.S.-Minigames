@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="NGG.css" />
+  </head>
+  <body>
+    <header>
+      Number Guessing Game
+    </header>
+    <div class="container">
+      <button class="Leicht" onclick="Easy()">Leicht (1-50)</button>
+      <button class="Mittel" onclick="Medium()">Mittel (1-100)</button>
+      <button class="Schwer" onclick="Hard()">Schwer (1-500)</button>
+      <h1 id="Headline">Errate die Zahl!</h1>
+      <h2 id="TriesNumber">Versuche: 0</h2>
+      <h2 id="highscore">Highscore: </h2>
+      <form onsubmit="GuessTheNumber(); return false";>
+        <input id="Guess" type="number" required placeholder="Bitte Zahl Erraten" />
+        <button class="Raten">Raten!</button>
+      </form>
+      <button id="btnRefresh" type="button">
+        Neu Starten
+      </button>
+    </div>
+
+    <script src="NGG.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,117 @@
+body{
+    background-color: #5a4db2;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+}
+
+header{
+    background-color: #41377f;
+    width: 100%;
+    font-size: 26px;
+}
+
+h1{
+    display: block;
+    width: 250px;
+
+    background: linear-gradient(45deg, #41377f, #4d4296);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 35px;
+    padding: 10px;
+    text-shadow: 0 0 15px #34d6ff;
+    transition: 0.5s;
+    
+}
+
+h1:hover{
+    transform: scale(1.05) rotate(5deg);
+}
+
+h2{
+    display: block;
+    width: 200px;
+
+    background: linear-gradient(45deg, #41377f, #4d4296);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 35px;
+    padding: 10px;
+    text-shadow: 0 0 15px #34d6ff;
+    transition: 0.5s;
+}
+
+h2:hover{
+    transform: scale(1.05) rotate(5deg);
+}
+
+input{
+    height: 30px;
+    width: 170px;
+    margin-right: 0;
+
+}
+
+button{
+    height: 35px;
+    width: 150px;
+    font-size: 20px;
+    background-color: rgb(169, 58, 58);
+    margin-top: 10px;
+    transition: 0.3s
+
+}
+
+button:hover{
+    box-shadow: 0 0 15px rgb(228, 128, 128);
+}
+
+.Raten{
+    height: 35px;
+    width: 150px;
+    font-size: 20px;
+    background-color: rgb(53, 196, 51);
+    transition: 0.3s;
+}
+
+.Raten:hover{
+    box-shadow: 0 0 15px rgb(121, 255, 119);
+}
+
+.Leicht{
+    height: 40px;
+    width: 170px;
+    font-size: 20px;
+    background-color: rgb(53, 196, 51);
+    transition: 0.3s;
+}
+
+.Leicht:hover{
+    box-shadow: 0 0 15px rgb(121, 255, 119);
+}
+
+.Mittel{
+    height: 40px;
+    width: 170px;
+    font-size: 20px;
+    background-color: #c4a733;
+    transition: 0.3s;
+}
+
+.Mittel:hover{
+    box-shadow: 0 0 15px rgb(225, 198, 87);
+}
+
+.Schwer{
+    height: 40px;
+    width: 170px;
+    font-size: 20px;
+    background-color: #a93a3a;
+    margin-top: 10px;
+    transition: 0.3s
+
+}
+
+.Schwer:hover{
+    box-shadow: 0 0 15px rgb(228, 128, 128);
+}
