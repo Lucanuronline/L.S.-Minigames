@@ -16,28 +16,6 @@ canvas {
 }
 
 
-
-h1{
-    display: block;
-    width: 150px;
-
-    background: linear-gradient(45deg, #2e6a36, #36713c);
-    border-radius: 10px;
-    font-weight: 600;
-    font-size: 35px;
-    margin: 20px auto;
-    padding: 10px;
-    text-shadow: 0 0 15px #7bc664;
-    text-align: center;
-    transition: 0.5s;
-        animation: start 1s;
-    
-}
-
-h1:hover{
-    transform: scale(1.05) rotate(5deg);
-}
-
 h2{
     display: block;
     width: 350px;
@@ -56,9 +34,9 @@ h2:hover{
 }
 
 button{
-    height: 45px;
-    width: 180px;
-    font-size: 20px;
+    height: 55px;
+    width: 250px;
+    font-size: 27px;
     background-color: #2e6a36;
     margin: 20px auto;
     transition: 0.3s;
