@@ -87,8 +87,8 @@ function moveSnake() {
 
     if (head.x === food.x && head.y === food.y) {
         snake.unshift(head);
-        food.x = Math.floor(Math.random() * 20);
-        food.y = Math.floor(Math.random() * 20);
+        food.x = Math.floor(Math.random() * 18) + 1;
+        food.y = Math.floor(Math.random() * 18) + 1;
 
 }
 
