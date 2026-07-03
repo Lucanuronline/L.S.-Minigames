@@ -7,20 +7,28 @@ body{
     align-items: center;
     text-align: center;
     animation: start 1s;
+    
+}
+
+canvas {
+    border: 2px solid white;
+    background: black;
 }
 
 h1{
     display: block;
-    width: 300px;
+    width: 150px;
 
     background: linear-gradient(45deg, #2e6a36, #36713c);
     border-radius: 10px;
     font-weight: 600;
-    font-size: 40px;
-    text-shadow: 0 0 15px #7bc664;
+    font-size: 35px;
     margin: 20px auto;
+    padding: 10px;
+    text-shadow: 0 0 15px #7bc664;
+    text-align: center;
     transition: 0.5s;
-    
+        animation: start 1s;
     
 }
 
@@ -45,52 +53,30 @@ h2:hover{
     transform: scale(1.05) rotate(5deg);
 }
 
-#feld {
-    width: 400px;
-    height: 300px;
-    background-color: rgb(255, 0, 0);
-    margin: 20px auto;
-    cursor: pointer;
-    box-shadow: 0 0 25px rgb(255, 0, 0);
-    border-radius: 15%;
-    animation: pulse 1.2s infinite;
-    
-}
-
 button{
     height: 45px;
     width: 180px;
     font-size: 20px;
-    background-color: rgb(69, 169, 58);
-    margin-top: 10px;
-    margin-bottom: 10px;
+    background-color: #2e6a36;
+    margin: 20px auto;
+    transition: 0.3s;
+        animation: start 2s;
 
 }
 
 button:hover{
-    box-shadow: 0 0 15px rgb(73, 216, 57);
+    box-shadow: 0 0 15px #7bc664;
 }
 
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.02);
-    }
-    100% {
-        transform: scale(1);
-    }
+#controls {
+    text-align: center;
+    margin-top: 20px;
+    display: none;
 }
 
-@keyframes start {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+#controls button {
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    margin: 5px;
 }

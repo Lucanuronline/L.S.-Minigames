@@ -26,3 +26,15 @@ background:
     width: 400px;
     
 }
+
+.snake{
+background:
+    linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url(img/snake.png);
+    background-size: cover;
+    border-radius: 5%;
+    
+    height: 400px;
+    width: 400px;
+    
+}
